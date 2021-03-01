@@ -1,0 +1,43 @@
+.global-breadcrumb
+	width: 100%
+	background-color: #f3f3f3
+	.breadcrumb
+		display: flex
+		align-items: center
+		background-color: transparent
+		flex-wrap: wrap
+		padding: 10px 0
+		list-style: none
+		margin-bottom: 0
+		li
+			position: relative
+			padding: 0 10px
+			display: flex
+			align-items: center
+			a
+				font-size: 16px
+				color: #999999
+			&:hover
+				a
+					color: #0066cc
+					&::before
+						color: #999999
+			&:not(:last-child)
+				a
+					display: flex
+					position: relative
+					&::before
+						position: absolute
+						content: "\ea54"
+						font-family: "remixicon"
+						font-size: 18px
+						top: 40%
+						transform: translateY(-40%)
+						right: -18px
+						
+
+	@media(min-width: 768.98px)
+		margin-bottom: 0
+
+	@media(min-width: 320px)
+		margin-bottom: 0

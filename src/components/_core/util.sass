@@ -1,0 +1,101 @@
+.d-flex
+	display: flex
+.justify-between
+	justify-content: space-between
+.justify-center
+	justify-content: center
+.align-center
+	align-items: center
+.text-center
+	text-align: center
+.text-right
+	text-align: right
+.text-left
+	text-align: left
+.flex-wrap
+	flex-wrap: wrap
+.text-white
+	color: #ffffff
+.button-prev, .button-next
+	cursor: pointer
+.line-bottom
+	border-bottom: 1px solid rgba($main, 0.28)
+.mx-auto
+	margin-right: auto
+	margin-left: auto
+.tab-link
+	overflow: auto
+	@media screen and ( max-width: 767.9px )
+		justify-content: flex-start!important
+.product-detail-page
+	.modulepager
+		display: none
+.modulepager
+	ul.pagination
+		display: flex
+		justify-content: center
+		align-items: center
+		list-style: none
+		padding: 0
+		width: 100%
+		margin-top: r(30px)
+		li
+			margin: 0
+			margin-right: 25/16*1rem
+			&:last-child
+				margin-right: 0
+			&.active
+				a,span
+					background-color: #3bb3f9
+					color: white
+					border: 1px solid #3bb3f9
+			a,span
+				display: inline-flex
+				width: 40px
+				height: 40px
+				justify-content: center
+				align-items: center
+				border: 1px solid #cccccc
+				background-color: unset
+				color: #999999
+				font-size: 16px
+				border-radius: 100%
+				&:hover
+					background-color: #3bb3f9
+					color: white
+					border: 1px solid #3bb3f9
+					transition: all .3s ease-in-out
+.bullet-pagination
+	position: relative
+	.swiper-pagination
+		width: 100%
+		margin-top: 45/16*1rem
+		.swiper-pagination-bullet
+			width: 10px
+			height: 10px
+			background: #dce3e9
+			margin-right: 10px
+			opacity: 1
+			&:focus
+				outline: unset
+			&.swiper-pagination-bullet-active
+				background-color: #5b6777 
+				background-image: linear-gradient(to top, #0064cc 0%, #0064cc 1%, #40c3f7 100%)
+				&:focus
+					outline: unset
+.main-button
+	.button-prev:hover em,
+	.button-next:hover em
+		color:#0064cc!important
+.seemore
+	&:hover
+		text-decoration: underline
+.primary-menu
+	ul
+		li.nav-item.active
+			.title 
+				a
+					color: #0c59b4
+
+
+		
